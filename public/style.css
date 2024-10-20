@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 24px;
+}

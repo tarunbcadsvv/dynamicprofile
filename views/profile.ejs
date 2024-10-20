@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile of <%= profile.name %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="profile-container">
+    <img src="<%= profile.profileImage %>" alt="Profile Image">
+    <h1><%= profile.name %></h1>
+    <p><strong>Age:</strong> <%= profile.age %></p>
+    <p><strong>Gender:</strong> <%= profile.gender %></p>
+    <p><strong>Profession:</strong> <%= profile.profession %></p>
+    <p><strong>Bio:</strong> <%= profile.bio %></p>
+
+    <h3>Skills:</h3>
+    <ul>
+        <% profile.skills.forEach(function(skill) { %>
+            <li><%= skill %></li>
+        <% }); %>
+    </ul>
+
+    <h3>Hobbies:</h3>
+    <ul>
+        <% profile.hobbies.forEach(function(hobby) { %>
+            <li><%= hobby %></li>
+        <% }); %>
+    </ul>
+  </div>
+</body>
+</html>
